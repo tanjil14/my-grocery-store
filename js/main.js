@@ -42,3 +42,38 @@ window.onscroll = () => {
   loginForm.classList.remove("active");
   menubar.classList.remove("active");
 };
+
+// make it functional for repeating task
+function Slider(name) {
+  // swiper for slider
+  new Swiper(name, {
+    loop: true,
+    spaceBetween: 20,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    // pagination: {
+    //   el: ".swiper-pagination",
+    //   clickable: true,
+    // },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        // spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 2,
+        // spaceBetween: 40,
+      },
+      1020: {
+        slidesPerView: 3,
+        // spaceBetween: 50,
+      },
+    },
+  });
+}
+// for 1st products
+Slider(".product-slider");
+// for 2nd review
+Slider(".review-slider");
