@@ -10,4 +10,4 @@
 - Handle navigation on small device by `css`.
 - This project also responsive.
 
-**_Note:_** This project is part of my practice work.
+**_Note:_** This project is a part of my practice work.
